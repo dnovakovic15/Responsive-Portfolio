@@ -1,0 +1,153 @@
+h1{
+    float:left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 84px;
+}
+
+ul{
+    margin-top: 0px;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    float: right;
+}
+
+li a{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: gray;
+    border-right: 1px solid lightgray;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+#last-item{
+    border: none;
+}
+
+#header{
+    width: 960px;
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px lightgray inset;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #4aaaa5;
+    color: white;
+    margin-left: 80px;
+    width: 24%;
+    padding:25px;
+    float: left;
+}
+
+#content{
+    height: 770px;
+    background-image: url("../images/concrete_seamless.png"); 
+}
+
+#about-me{
+    float: left;
+    height: 400px;
+    width: 450px;
+    position: relative;
+    top: 35px;
+    left: 80px;
+    background-color: white;
+}
+
+#about-me-title{
+    color:#4aaaa5; 
+    margin-left: 50px; 
+    font-size:24px; 
+    font-weight: bold; 
+    border-bottom:2px lightgray inset; 
+    position:relative; 
+    top:25%
+}
+
+#about-me-content{
+    margin-left: 50px;
+    margin-top: 40px;
+    color: gray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#sidebar{
+    float: left;
+    height: 125px;
+    width: 200px;
+    position: relative;
+    top: 35px;
+    left: 150px;
+    background-color: white;
+}
+
+#sidebar-title{
+    color:#4aaaa5; 
+    margin-left: 25px; 
+    margin-right: 15px;
+    padding-bottom: 10px;
+    font-size:16px; 
+    font-weight: bold; 
+    border-bottom:1px lightgray inset; 
+    position:relative; 
+    top:25%;
+    text-align: center;
+}
+
+#sidebar-images{
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+footer{
+    background-color: #424141;
+    color: white;
+    height:75px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: #4aaaa5 solid 8px;
+}
+
+#footer-content{
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#nav{
+    margin-right:130px;
+}
+
+#contact-content{
+    width: 100%;
+}
+
+form{
+    position: absolute;
+    width: 80%;
+    top: 75px;
+    left: 50px;
+    color: gray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+input{
+    margin-bottom: 20px;
+    width: 100%;
+    border:gray solid 1px;
+}
