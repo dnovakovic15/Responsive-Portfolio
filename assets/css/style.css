@@ -1,3 +1,5 @@
+
+
 h1{
     float:left;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -14,19 +16,54 @@ ul{
     margin-top: 0px;
 }
 
-li {
-    list-style: none;
+.a-links{
     font-size: 18px;
-    float: right;
-}
-
-li a{
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: gray;
     border-right: 1px solid lightgray;
     text-decoration: none;
     font-weight: bold;
     padding: 0px 10px;
+}
+
+.work {
+  position: relative;
+  float: left;
+  width: 40%;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 8px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  width: 63%;
+}
+
+.pic{
+    height: 120px;
+    width: 120px;
+}
+body{
+    width: 100%;
+    margin: 0px;
 }
 
 #last-item{
@@ -53,13 +90,14 @@ li a{
 }
 
 #content{
+    width: 100%;
     height: 770px;
     background-image: url("../images/concrete_seamless.png"); 
 }
 
 #about-me{
     float: left;
-    height: 400px;
+    height: 450px;
     width: 450px;
     position: relative;
     top: 35px;
@@ -85,12 +123,11 @@ li a{
 }
 
 #sidebar{
-    float: left;
+    float: right;
     height: 125px;
     width: 200px;
-    position: relative;
-    top: 35px;
-    left: 150px;
+    margin-right: 50%;
+    margin-top: 35px;
     background-color: white;
 }
 
@@ -111,6 +148,7 @@ li a{
     float: left;
     margin-top: 35px;
     margin-left: 25px;
+    width: 100%;
 }
 
 footer{
@@ -151,3 +189,168 @@ input{
     width: 100%;
     border:gray solid 1px;
 }
+
+@media only screen and (max-width: 960px) {
+    #header{
+        width: 100% !important;
+    }
+    #name{
+        width: 33%;
+    }
+    #content{
+        width: 100%;
+    }
+    #about-me{
+        width: 400px;
+        height: 700px;
+    }
+    #selfie{
+        float: none;
+        width: 90% !important;
+        height: 80% !important;
+        margin-bottom: 5%;
+    }
+    nav{
+        margin-right: 10%;
+    }
+    #portfolio-content{
+        height: 400px;
+        margin-left: 80px;
+    }
+    .work{
+        width: 100%;
+        margin:5%;
+    }
+    .pic{
+        height: 120px;
+        width: 120px;
+    }
+    .work h3{
+        width: 39%;
+    }
+    #sidebar{
+        margin-right: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #header{
+        width: 100% !important;
+    }
+    #name{
+        margin-left: 40px;
+        width: 33%;
+    }
+    #about-me{
+        width: 90%;
+        height: 400px;
+        left:40px;
+    }
+    #selfie{
+        width: 50% !important;
+        height: 40% !important;
+    }
+    #sidebar{
+        height: 200px;
+        margin-top: 50px;
+        width: 90%;
+    }
+    #sidebar-title{
+        text-align: left;
+        font-size: 24px;
+    }
+    #indeed, #stack-overflow, #github{
+        height: 100px !important;
+        width: 100px !important;
+    }
+    #portfolio-content{
+        height: 400px;
+        margin-left: 80px;
+        float: left;
+    }
+    .work{
+        width: 30%;
+    }
+    .pic{
+        height: 120px;
+        width: 120px;
+    }
+    .work h3{
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    #header{
+        width: 100% !important;
+        height: 100px;
+    }
+    #name{
+        margin-left: 0px !important;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+        padding-top: 5px;
+    }
+    #about-me{
+        width: 90%;
+        height: 500px;
+        left:40px;
+    }
+    #selfie{
+        width: 50% !important;
+        height: 40% !important;
+    }
+    #sidebar{
+        height: 150px;
+        top: 100px; 
+        left: 45px;
+        width: 90%;
+    }
+    #sidebar-title{
+        text-align: left;
+        font-size: 24px;
+    }
+    #indeed, #stack-overflow, #github{
+        height: 60px !important;
+        width: 60px !important;
+    }
+    nav{
+        height: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 0px;
+    }
+    .a-links{
+        padding-left: 10%;
+        padding-right: 10%;
+        border: none;
+    }
+    .work h3{
+        height: 2px;
+        width: 85%;
+        bottom: 10px;
+    }
+    .pic{
+        width: 100%;
+        height: 90px;
+    }
+    #portfolio-content{
+        margin-left: 10%;
+    }
+    .work{
+        margin: 2% 0px;
+        width: 100%;
+    }
+    #sidebar{
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+
